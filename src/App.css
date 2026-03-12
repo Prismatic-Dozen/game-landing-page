@@ -1,0 +1,77 @@
+.balloon-page {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(255, 211, 42, 0.24), transparent 40%),
+        radial-gradient(circle at 90% 30%, rgba(30, 144, 255, 0.2), transparent 42%),
+        radial-gradient(circle at 30% 80%, rgba(255, 71, 87, 0.2), transparent 45%),
+        #f0f2f5;
+}
+
+.surface-glass {
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(10px);
+}
+
+.pop-btn {
+    box-shadow: 0 7px 0 rgb(190 33 47);
+    transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
+}
+
+.pop-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.04);
+}
+
+.pop-btn:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 rgb(190 33 47);
+}
+
+.secondary-pop-btn {
+    transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+.secondary-pop-btn:hover {
+    transform: translateY(-2px);
+}
+
+.hero-ribbon {
+    background: linear-gradient(135deg, #70a1ff 0%, #bde6ff 42%, #f6f8fb 100%);
+}
+
+.confetti-sheen {
+    position: relative;
+    overflow: hidden;
+}
+
+.confetti-sheen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-120%);
+    background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, 0.7) 50%, transparent 80%);
+    transition: transform 650ms ease;
+}
+
+.confetti-sheen:hover::after {
+    transform: translateX(110%);
+}
+
+.balloon-float {
+    animation: drift 8s ease-in-out infinite;
+}
+
+.balloon-float.delay {
+    animation-delay: 1.6s;
+}
+
+@keyframes drift {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-16px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
