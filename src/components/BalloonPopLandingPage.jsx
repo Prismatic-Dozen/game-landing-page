@@ -13,20 +13,20 @@ import {
   Menu,
   X,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "./ui/card";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "./ui/accordion";
 
 const LOGO_URL =
   "https://customer-assets.emergentagent.com/job_e4784ebe-8fd2-4cee-a935-2bf3b5a354c8/artifacts/mlxnpz3l_ChatGPT%20Image%20Feb%2025%2C%202026%2C%2012_46_38%20PM%20%28Custom%29.png";
