@@ -147,6 +147,7 @@ const navLinks = [
   { label: "Modes", href: "#modes" },
   { label: "Community", href: "#community" },
   { label: "FAQ", href: "#faq" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 export default function BalloonPopLandingPage() {
@@ -156,13 +157,13 @@ export default function BalloonPopLandingPage() {
     <main className="balloon-page relative overflow-hidden text-[#2f3542]" data-testid="balloon-pop-landing-page">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <motion.div
-          className="absolute left-[8%] top-[120px] h-14 w-14 rounded-full bg-[#ff4757]/40 blur-sm"
+          className="absolute left-[8%] top-30 h-14 w-14 rounded-full bg-[#ff4757]/40 blur-sm"
           animate={{ y: [0, -18, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           data-testid="decorative-balloon-red"
         />
         <motion.div
-          className="absolute right-[14%] top-[220px] h-16 w-16 rounded-full bg-[#1e90ff]/35 blur-sm"
+          className="absolute right-[14%] top-55 h-16 w-16 rounded-full bg-[#1e90ff]/35 blur-sm"
           animate={{ y: [0, -14, 0] }}
           transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.7 }}
           data-testid="decorative-balloon-blue"
@@ -303,13 +304,13 @@ export default function BalloonPopLandingPage() {
             data-testid="hero-visual"
           >
             <div
-              className="surface-glass relative overflow-hidden rounded-[2rem] border border-white/80 p-4 shadow-[0_15px_55px_-10px_rgba(26,69,149,0.35)]"
+              className="surface-glass relative overflow-hidden rounded-4xl border border-white/80 p-4 shadow-[0_15px_55px_-10px_rgba(26,69,149,0.35)]"
               data-testid="hero-phone-frame"
             >
               <img
                 src={HERO_BG}
                 alt="Colorful balloons in the sky"
-                className="h-[460px] w-full rounded-[1.4rem] object-cover object-center"
+                className="h-115 w-full rounded-[1.4rem] object-cover object-center"
                 data-testid="hero-background-image"
               />
 
@@ -497,7 +498,7 @@ export default function BalloonPopLandingPage() {
       </section>
 
       <section className="mx-auto w-full max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8" data-testid="final-cta-section">
-        <div className="rounded-[2rem] bg-gradient-to-r from-[#ff6b81] via-[#ff4757] to-[#ff7f50] p-8 text-white shadow-[0_18px_45px_-18px_rgba(255,71,87,0.7)] sm:p-12">
+        <div className="rounded-4xl bg-linear-to-r from-[#ff6b81] via-[#ff4757] to-[#ff7f50] p-8 text-white shadow-[0_18px_45px_-18px_rgba(255,71,87,0.7)] sm:p-12">
           <h2 className="text-4xl font-bold sm:text-5xl" data-testid="final-cta-heading">
             Ready to start your pop legend?
           </h2>
